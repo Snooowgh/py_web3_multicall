@@ -15,15 +15,13 @@ setuptools.setup(
     description='web3_multicall',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/kkristof200/py_web3_multicall',
+    url='https://github.com/Snooowgh/py_web3_multicall',
     packages=setuptools.find_packages(),
     install_requires=[
-        'eth-abi>=2.1.1',
-        'eth-utils>=1.10.0',
+        'eth-abi>=4.2.1',
+        'eth-utils>=2.2.1',
         'jsoncodable>=0.1.7',
-        'kw3>=0.0.16',
-        'web3>=5.23.1',
-        'web3-wrapped-contract>=0.0.15'
+        'web3>=6.9.0',
     ],
     classifiers=[
         'Programming Language :: Python :: 3.4',
@@ -32,6 +30,8 @@ setuptools.setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
