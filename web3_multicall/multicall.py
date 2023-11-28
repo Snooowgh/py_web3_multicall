@@ -4,14 +4,14 @@
 from typing import Optional, List
 
 # Pip
-from web3_wrapped_contract import WrappedContract
+from .web3_wrapped_contract import WrappedContract
 from web3.eth import Eth
-from web3.contract import ContractFunction
+from web3.contract.contract import ContractFunction
 
 # Local
 from ._abi import abi
 from ._utils import Function
-from .models import AggregateResult, FunctionResult, Network
+from .models import AggregateResult, FunctionResult
 
 # -------------------------------------------------------------------------------------------------------------------------------- #
 
@@ -25,12 +25,11 @@ class Multicall(WrappedContract):
 
     def __init__(
         self,
-        eth: Eth,
-        address: Optional[str] = None
+        eth: Eth
     ):
         super().__init__(
             eth,
-            address or Network(eth.chain_id).multicall_adddress,
+            "0xcA11bde05977b3631167028862bE2a173976CA11",
             abi
         )
 

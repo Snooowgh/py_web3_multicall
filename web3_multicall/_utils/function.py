@@ -4,7 +4,7 @@
 from typing import List
 
 # Pip
-from web3.contract import ContractFunction
+from web3.contract.contract import ContractFunction
 
 # Local
 from ._function_signature import FunctionSignature
